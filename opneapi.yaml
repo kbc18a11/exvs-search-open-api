@@ -1,0 +1,48 @@
+openapi: 3.0.3
+info:
+  title: Exvs Search XB
+  description: Exvs Search XB用API
+  version: 1.0.0
+servers:
+  - url: https://localhost:8080/api/v1
+tags:
+  - name: Airframe
+    description: 機体情報関係
+paths:
+  /airframes:
+    get:
+      tags:
+        - Airframe
+      summary: 機体情報の一覧取得
+      description: 機体情報の一覧取得
+      operationId: getAirframes
+      security:
+        - Authorization: []
+      parameters:
+        - name: offset
+          in: query
+          allowEmptyValue: true
+          description: |
+            機体情報の取得開始位置
+            指定されない場合は、0から開始される
+          schema:
+            type: integer
+        - name: limit
+          in: query
+          allowEmptyValue: true
+          description: |
+            機体情報の取得数
+            指定されない場合は、最大量まで取得される
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "./schemas/requests/getAirframesResponse.yaml"
+        "400":
+          description: Bad Request
+        "500":
+          description: Internal Server Error

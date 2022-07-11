@@ -1,0 +1,21 @@
+type: object
+description: 機体一覧
+required:
+  - total
+  - airframes
+properties:
+  total:
+    description: すべての機体数
+    type: integer
+  airframes:
+    description: 機体一覧
+    type: array
+    items:
+      type: "object"
+      description: 機体情報
+      required:
+        - id
+      properties:
+        id:
+          description: 機体ID
+          type: string
