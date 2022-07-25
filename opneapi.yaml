@@ -35,6 +35,34 @@ paths:
             指定されない場合は、最大量まで取得される
           schema:
             type: integer
+        - name: airframeName
+          in: query
+          allowEmptyValue: true
+          description: |
+            機体名の検索
+          schema:
+            type: string
+        - name: cost
+          in: query
+          allowEmptyValue: true
+          description: |
+            機体コスト
+          schema:
+            type: integer
+        - name: titleOfWork
+          in: query
+          allowEmptyValue: true
+          description: |
+            機体コスト
+          schema:
+            type: integer
+        - name: titleOfWork
+          in: query
+          allowEmptyValue: true
+          description: |
+            作品タイトル名
+          schema:
+            type: string
       responses:
         "200":
           description: OK

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "apiMock": "npx prism mock ./opneapi.yaml -p 4000 -d",
+    "clientGenerate": "npx @openapitools/openapi-generator-cli generate -g typescript-axios -i opneapi.yaml -o ./apiclient",
+    "goEchoServerGenerate": "npx @openapitools/openapi-generator-cli generate -g go-echo-server -i opneapi.yaml -o ./serverCode"
   },
   "keywords": [],
   "author": "",
