@@ -53,14 +53,14 @@ paths:
           in: query
           allowEmptyValue: true
           description: |
-            機体コスト
+            作品タイトル名
           schema:
-            type: integer
-        - name: titleOfWork
+            type: string
+        - name: awakenType
           in: query
           allowEmptyValue: true
           description: |
-            作品タイトル名
+            覚醒タイプ名
           schema:
             type: string
       responses:
