@@ -15,6 +15,15 @@ properties:
       description: 機体情報
       required:
         - id
+        - name
+        - cost
+        - titleOfWork
+        - awakenType
+        - hp
+        - airframeInfoUrl
+        - thumbnailImageUrl
+        - isTransformation
+        - isDeformation
       properties:
         id:
           description: 機体ID
