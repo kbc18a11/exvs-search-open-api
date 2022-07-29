@@ -37,6 +37,9 @@ properties:
         titleOfWork:
           description: 作品タイトル名
           type: string
+        pilot:
+          description: パイロット名
+          type: string
         awakenType:
           description: 覚醒タイプ名
           type: string

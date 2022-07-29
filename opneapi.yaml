@@ -59,6 +59,14 @@ paths:
             作品タイトル名
           schema:
             type: string
+        - name: pilot
+          required: true
+          in: query
+          allowEmptyValue: true
+          description: |
+            パイロット名
+          schema:
+            type: string
         - name: awakenType
           required: true
           in: query
