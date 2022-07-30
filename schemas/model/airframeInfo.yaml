@@ -1,0 +1,41 @@
+type: "object"
+description: 機体情報
+required:
+  - id
+  - name
+  - cost
+  - titleOfWork
+  - awakenType
+  - hp
+  - airframeInfoUrl
+  - thumbnailImageUrl
+  - isTransformation
+  - isDeformation
+properties:
+  id:
+    description: 機体ID
+    type: integer
+  name:
+    description: 機体名
+    type: string
+  cost:
+    description: 機体コスト
+    type: integer
+  titleOfWork:
+    description: 作品タイトル名
+    type: string
+  pilot:
+    description: パイロット名
+    type: string
+  awakenType:
+    description: 覚醒タイプ名
+    type: string
+  hp:
+    description: 機体耐久値
+    type: integer
+  airframeInfoUrl:
+    description: 機体情報URL
+    type: string
+  thumbnailImageUrl:
+    description: サムネイルUrl
+    type: string
